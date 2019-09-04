@@ -1,0 +1,25 @@
+{
+    "name": "jetwes/laravel-forum",
+    "description": "A complete forum package designed for easy integration into any Laravel 4/5 application",
+    "keywords": ["laravel", "laravel-4", "laravel-5", "forum", "discuss"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jetwes",
+            "email": "j.twesmann@star-media.biz"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "illuminate/support": "~6.0"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-0": {
+            "Riari\\Forum\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
