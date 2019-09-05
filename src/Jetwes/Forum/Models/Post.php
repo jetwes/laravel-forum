@@ -1,8 +1,8 @@
-<?php namespace Riari\Forum\Models;
+<?php namespace Jetwes\Forum\Models;
 
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Str;
-use Riari\Forum\Libraries\AccessControl;
+use Jetwes\Forum\Libraries\AccessControl;
 
 class Post extends BaseModel {
 
@@ -17,7 +17,7 @@ class Post extends BaseModel {
 
 	public function thread()
 	{
-		return $this->belongsTo('\Riari\Forum\Models\Thread', 'parent_thread');
+		return $this->belongsTo('\Jetwes\Forum\Models\Thread', 'parent_thread');
 	}
 
 	public function author()

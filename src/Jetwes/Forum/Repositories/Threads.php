@@ -1,6 +1,6 @@
-<?php namespace Riari\Forum\Repositories;
+<?php namespace Jetwes\Forum\Repositories;
 
-use Riari\Forum\Models\Thread;
+use Jetwes\Forum\Models\Thread;
 
 class Threads extends BaseRepository {
 

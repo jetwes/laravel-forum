@@ -1,6 +1,6 @@
-<?php namespace Riari\Forum\Repositories;
+<?php namespace Jetwes\Forum\Repositories;
 
-use Riari\Forum\Models\Category;
+use Jetwes\Forum\Models\Category;
 
 class Categories extends BaseRepository {
 

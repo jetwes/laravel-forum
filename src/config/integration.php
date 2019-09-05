@@ -53,7 +53,7 @@ return [
 	| Application controller
 	|--------------------------------------------------------------------------
 	|
-	| This class must extend \Riari\Forum\Controllers\BaseController
+	| This class must extend \Jetwes\Forum\Controllers\BaseController
 	|
 	*/
 	'controller' => '\App\Http\Controllers\ForumController'

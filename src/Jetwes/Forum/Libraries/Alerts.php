@@ -1,4 +1,4 @@
-<?php namespace Riari\Forum\Libraries;
+<?php namespace Jetwes\Forum\Libraries;
 
 class Alerts {
 

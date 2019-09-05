@@ -1,6 +1,6 @@
-<?php namespace Riari\Forum\Repositories;
+<?php namespace Jetwes\Forum\Repositories;
 
-use Riari\Forum\Models\Post;
+use Jetwes\Forum\Models\Post;
 
 class Posts extends BaseRepository {
 

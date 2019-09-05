@@ -1,16 +1,16 @@
-<?php namespace Riari\Forum\Controllers;
+<?php namespace Jetwes\Forum\Controllers;
 
 use App;
 use Config;
 use Request;
 use Illuminate\Routing\Controller;
 use Redirect;
-use Riari\Forum\Repositories\Categories;
-use Riari\Forum\Repositories\Threads;
-use Riari\Forum\Repositories\Posts;
-use Riari\Forum\Libraries\AccessControl;
-use Riari\Forum\Libraries\Alerts;
-use Riari\Forum\Libraries\Validation;
+use Jetwes\Forum\Repositories\Categories;
+use Jetwes\Forum\Repositories\Threads;
+use Jetwes\Forum\Repositories\Posts;
+use Jetwes\Forum\Libraries\AccessControl;
+use Jetwes\Forum\Libraries\Alerts;
+use Jetwes\Forum\Libraries\Validation;
 use Route;
 use View;
 use Validator;

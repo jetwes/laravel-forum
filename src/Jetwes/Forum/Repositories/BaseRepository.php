@@ -1,4 +1,4 @@
-<?php namespace Riari\Forum\Repositories;
+<?php namespace Jetwes\Forum\Repositories;
 
 abstract class BaseRepository {
 

@@ -1,8 +1,8 @@
-<?php namespace Riari\Forum\Models;
+<?php namespace Jetwes\Forum\Models;
 
 use Illuminate\Support\Str;
-use Riari\Forum\Models\Thread;
-use Riari\Forum\Libraries\AccessControl;
+use Jetwes\Forum\Models\Thread;
+use Jetwes\Forum\Libraries\AccessControl;
 
 
 class Category extends BaseModel {
@@ -13,17 +13,17 @@ class Category extends BaseModel {
 
     public function parentCategory()
     {
-        return $this->belongsTo('\Riari\Forum\Models\Category', 'parent_category')->orderBy('weight');
+        return $this->belongsTo('\Jetwes\Forum\Models\Category', 'parent_category')->orderBy('weight');
     }
 
     public function subcategories()
     {
-        return $this->hasMany('\Riari\Forum\Models\Category', 'parent_category')->orderBy('weight');
+        return $this->hasMany('\Jetwes\Forum\Models\Category', 'parent_category')->orderBy('weight');
     }
 
     public function threads()
     {
-        return $this->hasMany('\Riari\Forum\Models\Thread', 'parent_category')->with('category', 'posts');
+        return $this->hasMany('\Jetwes\Forum\Models\Thread', 'parent_category')->with('category', 'posts');
     }
 
     public function getThreadsPaginatedAttribute()

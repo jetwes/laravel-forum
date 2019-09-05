@@ -1,7 +1,7 @@
-<?php namespace Riari\Forum\Libraries;
+<?php namespace Jetwes\Forum\Libraries;
 
 use Request;
-use Riari\Forum\Libraries\Alerts;
+use Jetwes\Forum\Libraries\Alerts;
 use Validator;
 
 class Validation {

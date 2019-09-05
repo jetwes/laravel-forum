@@ -1,8 +1,8 @@
-<?php namespace Riari\Forum\Models;
+<?php namespace Jetwes\Forum\Models;
 
 use Redirect;
-use Riari\Forum\Libraries\AccessControl;
-use Riari\Forum\Libraries\Alerts;
+use Jetwes\Forum\Libraries\AccessControl;
+use Jetwes\Forum\Libraries\Alerts;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Str;
 
@@ -18,7 +18,7 @@ class Thread extends BaseModel {
 
     public function category()
     {
-        return $this->belongsTo('\Riari\Forum\Models\Category', 'parent_category');
+        return $this->belongsTo('\Jetwes\Forum\Models\Category', 'parent_category');
     }
 
     public function author()
@@ -28,7 +28,7 @@ class Thread extends BaseModel {
 
     public function posts()
     {
-        return $this->hasMany('\Riari\Forum\Models\Post', 'parent_thread');
+        return $this->hasMany('\Jetwes\Forum\Models\Post', 'parent_thread');
     }
 
     public function getPostsPaginatedAttribute()

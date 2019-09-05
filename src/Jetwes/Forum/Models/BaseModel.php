@@ -1,4 +1,4 @@
-<?php namespace Riari\Forum\Models;
+<?php namespace Jetwes\Forum\Models;
 
 use Cache;
 use Carbon\Carbon;
